@@ -8,6 +8,6 @@ public class HomeController {
 
     @GetMapping("/")
     public String home() {
-        return "Welcome to KPI-024 Application!";
+        return "배포 테스트";
     }
 }
