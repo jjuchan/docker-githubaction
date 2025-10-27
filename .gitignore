@@ -1,9 +1,25 @@
-.idea
-.terraform
+# Terraform 상태 파일
+*.tfstate
+*.tfstate.*
 
-# 실무에서는 아래 파일들이 같이 관리되어야 한다.
-# 강사는 해당 리포지터리를 public 으로 하려고
-# 아래 파일과 같이 민감한 정보가 담기는 파일을 .gitignore 에 추가한다.
+# Terraform 변수 파일
+*.tfvars
+*.tfvars.json
+
+# 로컬 Terraform 디렉토리
+**/.terraform/*
+
+# 충돌 로그 파일
+crash.log
+crash.*.log
+
+# Terraform 재정의 파일
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform CLI 설정 파일
+.terraformrc
+terraform.rc
 .terraform.lock.hcl
-terraform.tfstate
-terraform.tfstate.backup
