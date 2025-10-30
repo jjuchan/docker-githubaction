@@ -1,14 +1,14 @@
-variable "prefix" {
-  description = "Prefix for all resources"
-  default     = "dev"
-}
-
 variable "region" {
   description = "region"
   default     = "ap-northeast-2"
 }
 
-variable "nickname" {
-  description = "nickname"
-  default     = "jjuchan"
+variable "prefix" {
+  description = "Prefix for all resources"
+  default     = "terra"
+}
+
+variable "app_1_domain" {
+  description = "app_1 domain"
+  default     = "api.p-14044-1.oa.gg"
 }
